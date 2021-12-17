@@ -2,8 +2,8 @@ import UIKit
 
 
 var forNumber = 0, toNumber = 1, lastNumber = 0
-var array : [Int] = []
-var array2 : [Int] = []
+var fibonacciArray : [Int] = []
+var forToArray : [Int] = []
 repeat {
     forNumber = toNumber
     toNumber = lastNumber
@@ -12,21 +12,21 @@ repeat {
     if lastNumber > 1000{
         break
     }
-    array.append(lastNumber)
+    fibonacciArray.append(lastNumber)
     
     if (lastNumber > 750) && (lastNumber < 1000){
-        array2.append(lastNumber)
+        forToArray.append(lastNumber)
     }
 }while lastNumber < 1000
 print("1000'e kadar Fibonacci Dizisi:")
-for  i in 0..<array.count{
-    print(array[i])
+for  i in 0..<fibonacciArray.count{
+    print(fibonacciArray[i])
 }
 
 
 print("750 - 1000 arası sayılar:")
-for  i in 0..<array2.count{
-    print(array2[i])
+for  i in 0..<forToArray.count{
+    print(forToArray[i])
 }
 
 
